@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    html, body{
+        height: 100%;
+        width: 100%;
+    }
+    .container{
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        background-color: aqua;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(patrick-fore-850jTF12RSQ-unsplash.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: fixed;
+    }
+    #set{
+        font-size: 50px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    #set1{
+        position: relative;
+        height: 200px;
+        width: 700px;
+        align-content: center;
+        justify-items: center;
+        color: white;
+    }
+    button{
+        height: 30px;
+        width: 300px;
+        margin-top: 30px;
+        border: none;
+        background-color: blue;
+        color: white;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    button:hover{
+        width: 400px;
+        font-size: 15px;
+        transition: 0.2s linear;
+        background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+        color: black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    #popup{
+        width: 80%;
+        background-color: rgb(234, 255, 0);
+        border-radius: 20px;
+        align-content: center;
+        position: absolute;
+        padding: 20px;
+        top: 30%;
+        left: 9%;
+        animation: 1s drop;
+    }
+    @keyframes drop{
+        0%{
+            top: -100px;
+        }
+        100%{
+            top: 220px;
+        }
+    }
+    #popup1{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.648);
+        top: 0;
+        left: 0; 
+        display: none;
+    }
+    #wrong{
+        font-size: 80px;
+        position: absolute;
+        font-weight: 900;
+        top: 10%;
+        right: 40px;
+        cursor: pointer;
+        color: white;
+        animation: 1s up;
+    }
+    @keyframes up{
+        0%{
+            top: -100px;
+        }
+        100%{
+            top: 10%;
+        }
+    }
+    #h{
+        border: 2px solid black;
+        width: max-content;
+        left: 35%;
+        position: relative;
+        border-radius: 5px;
+    }
+</style>
+<body>
+    <section>
+        <div class="container">
+            <div id="set1">
+            <h1 id="set">Click the button to PoP UP</h1>
+            <button>Click the button</button>
+            </div>
+        </div>
+    </section>
+    <div id="popup1">
+    <div id="popup">
+        <h1 id="h">
+            HELLO DEVELOPERS
+        </h1>
+        <br>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates maiores laboriosam officiis iusto debitis corporis, natus autem in quis. Itaque voluptas illum pariatur consectetur odit! Autem iure saepe dolore voluptatem.
+        Alias, excepturi expedita! Dolores nulla molestiae eveniet aspernatur ipsam ipsa amet asperiores, cupiditate omnis delectus deleniti sit dolorem vero, veniam eos laudantium dicta enim quo consequatur explicabo nihil excepturi? Libero.
+        Harum consequatur quam voluptas amet deserunt autem eligendi fugiat reiciendis esse hic ipsam quia distinctio quae facere neque aliquam dolorem, aut sunt odit deleniti itaque. Deserunt modi culpa nihil eos?
+        Itaque autem, dignissimos placeat officiis accusamus dicta nemo sit nisi veritatis quibusdam quod distinctio, necessitatibus ea recusandae corporis. Architecto aliquid fugiat in vitae porro sed praesentium odio nemo consequuntur dolores!
+        Similique quo, cumque debitis delectus atque laborum? Non architecto molestiae laboriosam ipsam adipisci nulla. Molestias explicabo dolores dicta, veniam aut repudiandae quo amet maiores sapiente, voluptatibus aliquam facere cum dolorum.</h2>
+    </div>
+    <span id="wrong">&times;</span>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
